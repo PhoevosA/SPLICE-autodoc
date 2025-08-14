@@ -15,7 +15,7 @@ for path in folder_paths:
     for python_file in python_files:
         module_name = python_file.split(".")[0]
         if module_name == "main":
-          module_name = page_name + "-" + module_name
+          module_name = path.split("/")[-1] + "." + module_name
         f.write(f"\n{python_file}\n")
         f.write("^" * len(python_file) + "\n")
         f.write("\n")
