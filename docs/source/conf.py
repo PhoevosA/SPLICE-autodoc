@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.abspath('../../splice-tests'))
 sys.path.insert(0, os.path.abspath('../../splice-ui'))
 sys.path.insert(0, os.path.abspath('../../splice-api'))
 sys.path.insert(0, os.path.abspath('../../splice-lib/src'))
+sys.path.insert(0, os.path.abspath('../../splice-cli/src'))
 
 # -- Project information
 
