@@ -1,0 +1,35 @@
+[project]
+name = "splice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.scripts]
+splice = "splice:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = [
+    "splice-cli",
+    "splice-pipeline",
+    "splice-api",
+    "splice-ui",
+    "splice-lib",
+]
+
+
+[tool.uv.sources]
+splice-lib = { workspace = true }
+splice-cli = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "sphinx",
+]
