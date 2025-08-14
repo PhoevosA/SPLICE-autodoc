@@ -3,11 +3,6 @@ SPLICE test
 
 .. toctree::
   :maxdepth: 1 
+  :glob:
 
-  Api
-  Cli
-  Lib
-  Pipeline
-  Tests
-  Ui
-  Summaries
+  *
